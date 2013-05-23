@@ -15,6 +15,15 @@
 class Breadcrumb {
     
     /**
+     * Avoid instantiation of the class
+     */
+    public function __construct() {}
+    
+    
+    
+    //--------------------------------------------------------------------------
+    
+    /**
      * Initialization function
      * 
      * @access  public
@@ -27,11 +36,9 @@ class Breadcrumb {
         \Config::load('breadcrumb', true);
     }
     
-    /**
-     * Avoid instantiation of the class
-     */
-    public function __construct() {}
     
+    
+    //--------------------------------------------------------------------------
     
     /**
      * Storage for the breadcrumbs
