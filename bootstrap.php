@@ -12,8 +12,14 @@
  * @link        http://hubspace.github.io/gasoline
  */
 
+Autoloader::add_core_namespace('Breadcrumb');
+
 Autoloader::add_classes(array(
-    'Breadcrumb\\Breadcrumb'    => __DIR__ . '/classes/breadcrumb.php',
+    'Breadcrumb\\Crumb'     => __DIR__ . '/classes/crumb.php',
+    'Breadcrumb\\Container' => __DIR__ . '/classes/container.php',
+    'Breadcrumb\\Render'    => __DIR__ . '/classes/render.php',
+    
+    'Breadcrumb\\Render_Bootstrap'  => __DIR__ . '/classes/render/bootstrap.php',
 ));
 
 /* End of file bootstrap.php */
