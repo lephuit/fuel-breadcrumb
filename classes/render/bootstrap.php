@@ -25,7 +25,7 @@ class Render_Bootstrap extends Render {
             }
         }
         
-        return html_tag('ul', array('class' => 'breadcrumb'), $list);
+        return ( $crumbs ? html_tag('ul', array('class' => 'breadcrumb'), $list) : $list );
     }
     
     
